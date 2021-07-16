@@ -15,9 +15,10 @@ const sumbitHandler = event => {
   newItem.textContent = shopping_item;
   // Image Icon
   const newIcon = document.createElement('img');
-  newIcon.src = "./shopping-cart-solid.svg";
+  newIcon.src = "./bullseye-solid.svg";
   // Delete button
   const deleteButton = document.createElement('button');
+  deleteButton.classList.add('deleteBtn');
   deleteButton.textContent = 'Delete';
   deleteButton.onclick = (e) => {
     let deleteNode = e.target;
@@ -33,6 +34,7 @@ const sumbitHandler = event => {
 
 input.addEventListener("change", inputHandler);
 button.addEventListener("click", sumbitHandler);
+// Add event listeners for the hard coded buttons
 deleteBtns.forEach(btn => {
   btn.addEventListener('click', (e) => {
     let deleteNode = e.target;

@@ -19,7 +19,7 @@
 .title {
   color:blueviolet;
   border-radius: inherit;
-  letter-spacing: 10px;
+  letter-spacing: 0.3em;
 }
 
 .add_item_container {
@@ -47,7 +47,7 @@
   margin-left: 20px;
   padding: 5px;
   text-transform: uppercase;
-  letter-spacing: 5px;
+  letter-spacing: 0.3em;
   padding: 5px;
   border-radius: 5px;
   box-shadow: 3px 3px 2px 1px rgba(0, 0, 0, 0.2);
@@ -78,3 +78,13 @@ ul #shopping_list {
   font-size: 20px;
 }
 
+.deleteBtn {
+  width: 15%;
+  height: 50%;
+  color: wheat;
+  background-color: rgb(21, 85, 138);
+  letter-spacing: 0.2em;
+  padding: 0.4em 0;
+  border-radius: 1em;
+  float: right;
+}
