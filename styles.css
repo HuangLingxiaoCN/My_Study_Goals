@@ -59,20 +59,20 @@ button:hover {
   filter: brightness(0.8);
 }
 
-.shopping_list_container {
+.goal_list_container {
   width: 60%;
 }
 
-ul #shopping_list {
+ul #goal_list {
   height: fit-content;
 }
 
-#shopping_list img {
+#goal_list img {
   height: 15px;
   margin-right: 10px;
 }
 
-#shopping_list li {
+#goal_list li {
   list-style: none;
   margin-top: 10px;
   font-size: 20px;

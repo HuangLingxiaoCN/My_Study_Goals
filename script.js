@@ -1,6 +1,6 @@
 const input = document.getElementById("input");
 const button = document.getElementById("button");
-const shopping_list = document.getElementById("shopping_list");
+const goal_list = document.getElementById("goal_list");
 const deleteBtns = document.querySelectorAll('.deleteBtn');
 
 let shopping_item;
@@ -12,10 +12,10 @@ const inputHandler = e => {
 const sumbitHandler = event => {
   // Shopping list Item
   const newItem = document.createElement('li');
-  newItem.textContent = shopping_item;
-  // Image Icon
-  const newIcon = document.createElement('img');
-  newIcon.src = "./bullseye-solid.svg";
+  newItem.textContent = " " + shopping_item;
+  // Add New Icon
+  const newIcon = document.createElement('i');
+  newIcon.classList.add('fas', 'fa-bullseye');
   // Delete button
   const deleteButton = document.createElement('button');
   deleteButton.classList.add('deleteBtn');
@@ -27,7 +27,7 @@ const sumbitHandler = event => {
   // Append to the shopping list
   newItem.prepend(newIcon);
   newItem.append(deleteButton);
-  shopping_list.appendChild(newItem);
+  goal_list.appendChild(newItem);
   // Reset the input to be empty
   input.value = '';
 };
