@@ -26,10 +26,15 @@
   width: 40%;
   height: 10vh;
   padding: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   /* background-color: rgb(103, 103, 156); */
+}
+
+#myForm {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  height: 60%;
+  width: 100%;
 }
 
 .add_item_container input {
@@ -43,7 +48,7 @@
 
 .add_item_container button {
   width: 20%;
-  height: 60%;
+  height: 80%;
   margin-left: 20px;
   padding: 5px;
   text-transform: uppercase;
@@ -52,11 +57,6 @@
   border-radius: 5px;
   box-shadow: 3px 3px 2px 1px rgba(0, 0, 0, 0.2);
   background-color: burlywood;
-}
-
-button:hover {
-  cursor: pointer;
-  filter: brightness(0.8);
 }
 
 .goal_list_container {
@@ -87,4 +87,9 @@ ul #goal_list {
   padding: 0.4em 0;
   border-radius: 1em;
   float: right;
+}
+
+button:hover {
+  cursor: pointer;
+  filter: brightness(0.8);
 }
