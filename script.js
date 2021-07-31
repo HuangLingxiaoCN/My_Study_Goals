@@ -53,10 +53,12 @@ const addGoal = (e) => {
   e.preventDefault();
   // Pull out the input value
   const newGoal = input.value;
-  myGoals.push(newGoal);
-  localStorage.setItem('myGoals', JSON.stringify(myGoals))
-  createNewGoal(newGoal);
-  input.value = "";
+  if(newGoal !== '') {
+    myGoals.push(newGoal);
+    localStorage.setItem('myGoals', JSON.stringify(myGoals))
+    createNewGoal(newGoal);
+    input.value = "";
+  }
 };
 
 const removeGoal = (deletedGoal) => {

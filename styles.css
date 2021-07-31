@@ -11,12 +11,12 @@ body {
 
 .title_container {
   background-color: yellowgreen;
-  width: 40%;
-  height: 20vh;
+  width: 70%;
+  height: 10vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 20px 0;
+  margin: 1rem 0;
   border-radius: 10px;
   box-shadow: 3px 3px 2px 1px rgba(0, 0, 0, 0.2);
 }
@@ -24,41 +24,36 @@ body {
 .title {
   color: blueviolet;
   border-radius: inherit;
-  letter-spacing: 0.3em;
+  letter-spacing: 0.3rem;
 }
 
 .add_item_container {
-  width: 40%;
+  width: 60%;
   height: 10vh;
   padding: 20px;
-  /* background-color: rgb(103, 103, 156); */
 }
 
 #myForm {
   display: flex;
-  flex-flow: row wrap;
-  align-items: center;
   height: 60%;
   width: 100%;
 }
 
 .add_item_container input {
   width: 70%;
-  height: 50%;
-  padding: 5px 5px;
-  border: 2px solid black;
+  padding: 0.7rem 5px;
+  border: 0.1rem solid black;
   box-shadow: 3px 3px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
+  border-radius: 0.2rem;
 }
 
-.add_item_container button {
+#button {
   width: 20%;
-  height: 80%;
-  margin-left: 20px;
-  padding: 5px;
+  margin-left: 1.5rem;
+  padding-bottom: 0.2rem;
   text-transform: uppercase;
+  text-align: center;
   letter-spacing: 0.3em;
-  padding: 5px;
   border-radius: 5px;
   box-shadow: 3px 3px 2px 1px rgba(0, 0, 0, 0.2);
   background-color: burlywood;
@@ -97,4 +92,19 @@ ul #goal_list {
 button:hover {
   cursor: pointer;
   filter: brightness(0.8);
+}
+
+@media only screen and (max-width: 600px) {
+  .add_item_container input {
+    margin-left: 0;
+    width: fit-content;
+  }
+
+  #button {
+    width: fit-content;
+  }
+
+  .goal_list_container {
+    width: fit-content;
+  }
 }
